@@ -24,8 +24,8 @@ def data_type_tostr(adata, key):
 
 def preprocess(args):
     print('----------------------------------preprocess',args.dataset_name,'---------------------------------------------')
-    if args.dataset_name == 'pancreas':
-        adata = scv.datasets.pancreas() 
+    if args.dataset_name == your_dataset_name:
+        adata = ad.read_h5ad(F:/endocrinogenesis_day15)
     elif args.dataset_name == 'gastrulation_erythroid':
         adata = scv.datasets.gastrulation_erythroid()   
         adata.uns['clusters_colors'] = adata.uns['celltype_colors'].copy()
